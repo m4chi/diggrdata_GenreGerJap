@@ -1,11 +1,59 @@
-# diggrdata_GenreGerJap
 This website contains data, statistics and visualizations used in the publication "Was wird denn hier gespielt? Genrebezogene Unterschiede der digitalen Spielelandschaft in Deutschland und Japan", published in Spielzeichen IV (2023).
 
-The data is used in my ongoing research project on videogame spatialization, and may be updated and extended over time. For stable versions used in my research, please refer to the Zenodo upload specified in the respective research output.
+The data and visualizations can be found in the related [github repository](https://github.com/m4chi/diggrdata_GenreGerJap).
 
-Large portions of the data have been aggregated with the [diggr tools](https://github.com/diggr/) and edited manually thereafter. This research has received support from the DFG.
+The data is used in my ongoing research project on videogame spatialization, and may be updated and extended over time. For stable versions, please refer to the Zenodo upload specified in the respective research output.
 
-## 1. 
+Large portions of the data have been aggregated with the [diggr tools](https://github.com/diggr/) and edited manually thereafter. For the purpose of this research, I rely on a dataset retrieved from Mobygames.com on April 26, 2019, with their kind support. This research has received support from the DFG.
+
+## 1. Overlap of titles per platform for Germany and Japan
+
+The following table contains the raw data for the overlap between game titles on all relevant platforms between Japan and Germany, which was included in the article in an abbreviated form (Table 1). Note that the original data could not be checked for quality and completeness across all platforms - as such, the data is a rough approximation of the empirical reality.
+
+[Cross-country overlap of videogame titles per platform](data/JP_GER_quantitycomparison_finApril2022.csv)
+
+## 2. Regional Genre Cultures
+
+In order to facilitate the research, I have created a table containing teh quantitative distribution of genre labels for each platform for the releases in Germany and Japan, using the 15 genre categories provided by Mobygames as basis.
+
+[Basic Genres](data/Genre_quantitylist_GERJP_catBasicGenres.csv)
+[Gameplay](data/Genre_quantitylist_GERJP_catGameplay.csv)
+[narrative Theme / Topics](data/Genre_quantitylist_GERJP_catNarrativeThemeTopic.csv)
+[Setting](data/Genre_quantitylist_GERJP_catSetting.csv)
+[Sports Themes](data/Genre_quantitylist_GERJP_catSportsThemes.csv)
+[Vehicular Themes](data/Genre_quantitylist_GERJP_catVehicularThemes.csv)
+
+For the other genre categories, please see the [repository's data folder](data/).
+
+The data was visualized in a series of bar plots:
+
+[![Basic Genres Comparison plot](visualizations/genre_comp_JPGER__c_BasicGenres__p_all_percent_barh.png)](visualizations/genre_comp_JPGER__c_BasicGenres__p_all_percent_barh.png)
+
+[![Gameplay Genres Comparison plot](visualizations/genre_comp_JPGER__c_Gameplay__p_all_percent_barh.png)](visualizations/genre_comp_JPGER__c_Gameplay__p_all_percent_barh.png)
+
+[![Narrative Theme / Topic Comparison plot](visualizations/genre_comp_JPGER__c_NarrativeThemeTopic__p_all_percent_barh.png)](visualizations/genre_comp_JPGER__c_NarrativeThemeTopic__p_all_percent_barh.png)
+
+[![Setting Comparison plot](visualizations/genre_comp_JPGER__c_Setting__p_all_percent_barh.png)](visualizations/genre_comp_JPGER__c_Setting__p_all_percent_barh.png)
+
+[![Sports Themes Comparison plot](visualizations/genre_comp_JPGER__c_SportsThemes__p_all_percent_barh.png)](visualizations/genre_comp_JPGER__c_SportsThemes__p_all_percent_barh.png)
+
+[![Vehicular Themes Comparison plot](visualizations/genre_comp_JPGER__c_VehicularThemes__p_all_percent_barh.png)](visualizations/genre_comp_JPGER__c_VehicularThemes__p_all_percent_barh.png)
+
+
+## 3. Historical development
+
+In addition to aggregating the data across different platforms, I have also created a historical timeline of the shares particular genre have assumed in each country:
+
+[![Historical development of Basic Genres in Japan for PC](visualizations/genredist_timeline_JPGER__cat1_pc_Japan.svg)](visualizations/genredist_timeline_JPGER__cat1_pc_Japan.svg)
+
+[![Historical development of Basic Genres in Germany for PC](visualizations/genredist_timeline_JPGER__cat1_pc_Germany.svg)](visualizations/genredist_timeline_JPGER__cat1_pc_Germany.svg)
+
+
+[![Historical development of Sports Themes in Japan for all platforms](visualizations/genredist_timeline_JPGER__cat3_all_Japan.svg)](visualizations/genredist_timeline_JPGER__cat3_all_Japan.svg)
+
+[![Historical development of Sports Themes in Germany for all platforms](visualizations/genredist_timeline_JPGER__cat3_all_Germany.svg)](visualizations/genredist_timeline_JPGER__cat3_all_Germany.svg)
+
+For a more comprehensive set of visualizations, please consult the [repository's visualization folder](visualizations/).
 
 # Meta
 
